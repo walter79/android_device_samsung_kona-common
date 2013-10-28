@@ -59,6 +59,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     irda.exynos4
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.cm.hardware.cabc=/sys/class/mdnie/mdnie/cabc
+
 # Set product characteristic to tablet, needed for some ui elements
 PRODUCT_CHARACTERISTICS := tablet
 
