@@ -56,8 +56,8 @@ PRODUCT_PACKAGES += \
     sensors.smdk4x12
 
 # IRDA
-PRODUCT_PACKAGES += \
-    irda.exynos4
+#PRODUCT_PACKAGES += \
+#   irda.exynos4
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cm.hardware.cabc=/sys/class/mdnie/mdnie/cabc
