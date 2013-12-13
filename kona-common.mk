@@ -55,9 +55,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.smdk4x12
 
-# IRDA
-#PRODUCT_PACKAGES += \
-#   irda.exynos4
+# IR packages
+PRODUCT_PACKAGES += \
+    consumerir.exynos4
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.consumerir.xml:system/etc/permissions/android.hardware.consumerir.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.cm.hardware.cabc=/sys/class/mdnie/mdnie/cabc
