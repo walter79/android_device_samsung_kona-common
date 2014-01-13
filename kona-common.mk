@@ -24,6 +24,8 @@ PRODUCT_AAPT_PREF_CONFIG := tvdpi
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 1280
 
+TARGET_HAS_CAM_FLASH := false
+
 # Init files
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.smdk4x12.usb.rc:root/init.smdk4x12.usb.rc \
