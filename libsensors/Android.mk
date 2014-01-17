@@ -28,6 +28,10 @@ LOCAL_MODULE_TAGS := optional
 
 LOCAL_CFLAGS := -DLOG_TAG=\"Sensors\"
 
+ifeq ($(TARGET_DEVICE), n5110)
+LOCAL_CFLAGS := -DALS3201_SENSOR
+endif
+
 LOCAL_SRC_FILES := \
 		sensors.cpp \
 		SensorBase.cpp \
