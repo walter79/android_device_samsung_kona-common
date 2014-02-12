@@ -1,3 +1,4 @@
+ifneq ($(filter n5100 n5110,$(TARGET_DEVICE)),)
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
@@ -10,3 +11,4 @@ LOCAL_MODULE_SUFFIX := .xml
 LOCAL_MODULE_PATH := $(TARGET_OUT)/etc/sound
 include $(BUILD_PREBUILT)
 
+endif
