@@ -25,7 +25,7 @@ on init
 on early-fs
 #	insmod /lib/modules/vibrator.ko
 
-    mount ext4 /dev/block/mmcblk0p9 /system ro wait noatime
+    mount ext4 /dev/block/platform/dw_mmc/by-name/SYSTEM /system ro wait noatime
 
 	mkdir /data/log 0777
 
@@ -57,13 +57,7 @@ service ueventd /sbin/ueventd
 service console /system/bin/sh
 	console
 	
-service playlpm /system/bin/playlpm
-    	user root
-
-service immvibed /system/bin/immvibed 
-	oneshot
-	
-service lpmkey /system/bin/lpmkey
+service lpm /system/bin/lpm
     	user root
 
 # adbd is controlled by the persist.service.adb.enable system property
