@@ -27,7 +27,7 @@
     <!-- <bool name="config_forceDisableHardwareKeyboard">false</bool> -->
 
     <!-- Boolean to enable stylus gestures -->
-    <!--<bool name="config_stylusGestures">true</bool>-->
+    <!-- <bool name="config_stylusGestures">true</bool> -->
     
    <bool name="config_allowAllRotations">true</bool>
    <integer name="config_lidOpenRotation">-1</integer>
