@@ -17,7 +17,7 @@
 # This variable is set first, so it can be overridden
 # by BoardConfigVendor.mk
 -include device/samsung/smdk4412-common/BoardCommonConfig.mk
--include vendor/samsung/kona/BoardConfigVendor.mk
+-include vendor/samsung/kona-common/BoardConfigVendor.mk
 
 LOCAL_PATH := device/samsung/kona-common
 
