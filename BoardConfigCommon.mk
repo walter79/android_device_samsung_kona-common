@@ -20,6 +20,7 @@ LOCAL_PATH := device/samsung/kona-common
 
 # For KK blobs
 MALLOC_SVELTE := true
+TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 
 # Recovery
 TARGET_RECOVERY_DENSITY := mdpi
