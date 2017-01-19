@@ -383,12 +383,6 @@ service qc_kickstart /system/bin/qcks s
     group radio cache inet misc audio sdcard_rw log
     seclabel u:r:qc_kickstart:s0
 
-service qmiproxy /system/bin/qmiproxy
-    class main
-    user radio
-    group radio gps
-    seclabel u:r:qmiproxy:s0
-
 service qmuxd /system/bin/qmuxd
     class main
     user root
